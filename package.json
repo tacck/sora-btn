@@ -1,0 +1,23 @@
+{
+  "name": "sora-btn",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.x"
+  },
+  "scripts": {
+    "postinstall": "cd ./check-soracom-button && yarn install --production=false && yarn build",
+    "serve": "node index.js",
+    "local": "DB_USER=root DB_PASSWORD=root DB_NAME=soracom IMSI=YOUR_IMSI node index.js"
+  }
+}
