@@ -186,11 +186,10 @@ $ dokku ps:restart sora-btn
        https://sora-btn.your-dokku-server.example.com
 
 ```
-TODO: DB_PASSWORDなどの情報伏せ
 
 ## アクセス
 
-SORACOM
-
 WEB
+
+`https://sora-btn.your-dokku-server.example.com`
 
